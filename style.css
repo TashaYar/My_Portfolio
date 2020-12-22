@@ -1,0 +1,54 @@
+.navbar {
+  background: transparent;
+}
+
+body {
+  background-image: url("images/pexels-fauxels-3184460.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 70px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+/*google*/
+.fa-github {
+  background: white;
+  color: black;
+}
+
+/* linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #e1306c;
+  color: white;
+}
