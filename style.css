@@ -1,9 +1,10 @@
 .navbar {
-  background: transparent;
+  background-color: transparent;
 }
 
 body {
   background-image: url("images/pexels-fauxels-3184460.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
 }
