@@ -1,12 +1,16 @@
 .navbar {
-  background-color: transparent;
+  background-color: black;
 }
 
-body {
-  background-image: url("images/pexels-fauxels-3184460.jpg");
-
+.jumbotron {
+  margin: 0px auto;
+  background-image: url("images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
+  color: white;
   background-repeat: no-repeat;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-size: cover;
+  height: 560px;
 }
 /* Style all font awesome icons */
 .fa {
@@ -52,4 +56,8 @@ body {
 .fa-instagram {
   background: #e1306c;
   color: white;
+}
+.row-header {
+  padding-top: 60px;
+  margin-left: auto;
 }
