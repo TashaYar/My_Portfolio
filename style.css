@@ -1,16 +1,59 @@
-.navbar {
-  background-color: black;
+#navbar {
+  background-color: transparent;
+  width: 100%;
 }
 
-.jumbotron {
-  margin: 0px auto;
-  background-image: url("images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
+.block1 {
+  background-image: url(images/daniel-josef-AMssSjUaTY4-unsplash.jpg);
   color: white;
   background-repeat: no-repeat;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  background-attachment: fixed;
   background-size: cover;
-  height: 560px;
+  width: 100%;
+  height: 600px;
+}
+#font1 {
+  font-size: 70px;
+}
+.row-header {
+  padding-top: 150px;
+  width: fit-content;
+}
+#myprofile {
+  background-color: darkslategrey;
+  padding-bottom: 20px;
+}
+.btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+#button2 {
+  background: #96bb7c;
+  border-color: #96bb7c;
+  border-radius: 13px;
+  color: black;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+#button1 {
+  background: #96bb7c;
+  border-color: #96bb7c;
+  border-radius: 13px;
+  color: black;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid;
+}
+#my-projects {
+  background-color: black;
+  padding-top: 0px;
 }
 /* Style all font awesome icons */
 .fa {
@@ -56,8 +99,4 @@
 .fa-instagram {
   background: #e1306c;
   color: white;
-}
-.row-header {
-  padding-top: 60px;
-  margin-left: auto;
 }
