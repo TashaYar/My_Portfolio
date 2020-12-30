@@ -4,14 +4,23 @@
 }
 
 .block1 {
-  background-image: url(images/daniel-josef-AMssSjUaTY4-unsplash.jpg);
+  background: linear-gradient(
+    to right,
+    #e763b8 0%,
+    #ff9e2c 50%,
+    #b6701e 50%,
+    #f4d03f 100%,
+    transparent
+  );
+
   color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
+
 #font1 {
   font-size: 70px;
 }
@@ -20,7 +29,8 @@
   width: fit-content;
 }
 #myprofile {
-  background-color: darkslategrey;
+  padding-top: 10px;
+  background-color: white;
   padding-bottom: 20px;
 }
 .btn {
@@ -31,11 +41,9 @@
   border-radius: 30px;
 }
 #button2 {
-  background: #96bb7c;
-  border-color: #96bb7c;
+  background: turquoise;
   border-radius: 13px;
   color: black;
-  margin-left: 40px;
   margin-top: 20px;
 }
 #button1 {
@@ -43,7 +51,7 @@
   border-color: #96bb7c;
   border-radius: 13px;
   color: black;
-  margin-left: 40px;
+  margin-left: 100px;
   margin-top: 20px;
 }
 .content {
@@ -52,13 +60,46 @@
   border: 2px solid;
 }
 #my-projects {
-  background-color: black;
+  background-color: white;
   padding-top: 0px;
+  padding-bottom: 20px;
+}
+#myblog {
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+#hire {
+  background-image: url("images/available.jpg");
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+#contact-me {
+  background-color: #fbdfdf;
+  padding-top: 60px;
+}
+#button3 {
+  background: #f57777;
+  color: white;
+  height: 50px;
+  width: 300px;
+
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #0f0f0f;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
 }
 /* Style all font awesome icons */
 .fa {
   padding: 10px;
-  font-size: 70px;
+  font-size: 20px;
   width: 40px;
   text-align: center;
   text-decoration: none;
