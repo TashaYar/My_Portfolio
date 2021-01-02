@@ -74,21 +74,19 @@
             <li class="nav-item">
               <a class="nav-link" href="#myprofile">About-me</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dropdown</a>
-            </li>
+            
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#my-projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
+              <a class="nav-link" href="#myblog">Blogs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-me">Contact</a>
             </li>
           </ul>
         </div>
@@ -117,7 +115,7 @@
 
     <div class="container-fluid" id="myprofile">
       <div class="row row-content">
-        <div class="col-12 col-sm-6">
+        <div class="col-12 ">
           <center>
             <div class="thumbnail">
             <img
@@ -126,18 +124,18 @@
               style="height: 200px; width: auto; padding: 20px 0px 0px 0px;"
             />
             <div class="caption">
-              <p>Hello! My name is Pallavi Singh.<br> I am an undergraduate CSE student at United College of Engineering & Research.<br>I believe in three C's<br>"Choices, Chances, &Changes."</p>
-            </div>
+              <blockquote>Hello! My name is Pallavi Singh.<br> I am an undergraduate CSE student at United College of Engineering & Research.<br>I believe in three C's<br>"Choices, Chances, &Changes."
+              </blockquote>
+                          </div>
           </div>
           </center>
          
         </div>
    
-        <div class="col-12 col-sm-6">
+        <div class="col-12 ">
           <h1 style="padding-left: 30px;">My Skills</h1>
-          <ul>
-         <li style="list-style: none;">HTML</li>
-          
+          <ul style="list-style: none;">
+          <li>HTML</li>
           <div class="progress" style="width: 300px;border-radius: 13px;">
             <div
               class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
@@ -151,7 +149,7 @@
             </div>
           </div>
         </br>
-        <li  style="list-style: none;">CSS</li>
+          <li>CSS</li>
           <div class="progress" style="width: 300px; border-radius: 13px;">
             <div
               class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
@@ -165,7 +163,7 @@
             </div>
           </div>
         </br>
-        <li style="list-style: none;">JavaScript</li>
+          <li>Javascript</li>
           <div class="progress" style="width: 300px;border-radius: 13px;">
             <div
               class="progress-bar bg-info progress-bar-striped progress-bar-animated"
@@ -179,7 +177,7 @@
             </div>
           </div>
         </br>
-        <li style="list-style: none;">MYSQL</li>
+          <li>MySQL</li>
           <div class="progress" style="width: 300px;border-radius: 13px;">
             <div
               class="progress-bar bg-success progress-bar-striped progress-bar-animated"
@@ -193,7 +191,7 @@
             </div>
           </div>
         </br>
-          <li style="list-style: none;">PHP</li>
+          <li>PHP</li>
           <div class="progress" style="width: 300px;border-radius: 13px;">
             <div
               class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
@@ -207,7 +205,7 @@
             </div>
           </div>
         </br>
-        <li  style="list-style: none;">C-Programming</li>
+          <li>C-Programming</li>
         <div class="progress" style="width: 300px;border-radius: 13px;">
           <div
             class="progress-bar bg-info progress-bar-striped progress-bar-animated"
@@ -220,7 +218,7 @@
             80% 
           </div>
         </div>
-        </ul>
+      </ul>
      
         <a href="#" class="btn btn-primary" id="button1">Download Resume</a>
       
@@ -235,23 +233,23 @@
           <div class="row">
             <div class="col-12 col-sm-4 pro1">
               <div class="content">
-                <img src="/images/daniel-josef-AMssSjUaTY4-unsplash.jpg" alt="Mountains" style="width:100% ;height:300px">
-                <h4>project1</h4>
+                <img src="/images/daniel-josef-AMssSjUaTY4-unsplash.jpg" alt="Mountains" style="width:100% ;">
+                <h4>To-do-list</h4>
                 <p>Lorem ipsum dolor..</p>
               </div>
             </div>
             <div class="col-12 col-sm-4 pro2">
               <div class="content">
                 <img src="/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" alt="Lights" style="width:100%">
-                <h4>project2</h4>
+                <h4>Expense Manager</h4>
                 <p>Lorem ipsum dolor..</p>
               </div>
             </div>
             <div class="col-12 col-sm-4 pro3">
               <div class="content">
                 <img src="/images/karthik-swarnkar-AoNvwL-Dmtw-unsplash.jpg" alt="Nature" style="width:100%">
-                <h4>project3</h4>
-                <p>Lorem ipsum dolor..</p>
+                <h4>Portfolio Design</h4>
+                <p></p>
               </div>
             </div>
           </div>
@@ -347,6 +345,39 @@
         </center>
         </footer>
           <!--scripts-->
-    <script></script>
+    <script>
+      $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    </script>
+    <script>
+      $(function () {
+  $(document).scroll(function () {
+    var $nav = $("#navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+    </script>
   </body>
 </html>

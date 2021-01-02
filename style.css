@@ -2,14 +2,17 @@
   background-color: transparent;
   width: 100%;
 }
-
+#navbar.scrolled {
+  background-color: black !important;
+  transition: background-color 200ms linear;
+}
 .block1 {
   background: linear-gradient(
     to right,
-    #e763b8 0%,
-    #ff9e2c 50%,
-    #b6701e 50%,
-    #f4d03f 100%,
+    #84f0fa 0%,
+    #6610f2 50%,
+    #6f42c1 50%,
+    #e83e8c 100%,
     transparent
   );
 
@@ -18,7 +21,7 @@
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 820px;
+  height: 1000px;
 }
 
 #font1 {
@@ -29,7 +32,7 @@
   width: fit-content;
 }
 #myprofile {
-  padding-top: 10px;
+  padding-top: 60px;
   background-color: white;
   padding-bottom: 20px;
 }
@@ -146,3 +149,4 @@ footer {
   background: #e1306c;
   color: white;
 }
+/*blockquote*/
