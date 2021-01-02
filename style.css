@@ -69,23 +69,24 @@
 
 #my-projects {
   background-color: white;
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 #myblog {
   background-color: white;
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 #hire {
   background-image: url("images/available.jpg");
   background-size: cover;
   padding-bottom: 50px;
-  padding-top: 30px;
+  padding-top: 200px;
 }
 #contact-me {
   background-color: #fbdfdf;
   padding-top: 60px;
+  padding-bottom: 80px;
 }
 #button3 {
   background: #f57777;
@@ -101,7 +102,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-
+  padding-top: 20px;
+  padding-bottom: 60px;
   color: white;
 }
 /* Style all font awesome icons */
@@ -150,3 +152,82 @@ footer {
   color: white;
 }
 /*blockquote*/
+
+/*timeline*/
+.circle {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+.main-container {
+  position: relative;
+  width: 390px;
+}
+/*creating line for timeline*/
+
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: #ffc0cb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper {
+  padding: 0px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+.text-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -7px;
+  background-color: #ff69b4;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*for left events*/
+.left {
+  left: 0;
+}
+/*for right events*/
+.right {
+  left: 50%;
+}
+.right::after {
+  left: -10px;
+}
+/*content box colour padding and radius for circular corner*/
+.content1 {
+  padding: 15px 15px 15px 17px;
+  background-color: #ffc0cb;
+  border-radius: 18px;
+}
+/*setting text property of event heading*/
+.content1 h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #212121;
+  margin-left: -10px;
+  letter-spacing: 0px;
+}
+/*setting text property of event content*/
+.content1 p {
+  color: #616161;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 2px;
+}
