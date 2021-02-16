@@ -7,15 +7,7 @@
   transition: background-color 200ms linear;
 }
 .block1 {
-  background: linear-gradient(
-    to right,
-    #84f0fa 0%,
-    #6610f2 50%,
-    #6f42c1 50%,
-    #e83e8c 100%,
-    transparent
-  );
-
+  background-image: url("images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
   color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,7 +24,7 @@
 }
 #myprofile {
   padding-top: 60px;
-  background-color: burlywood;
+  background-color: #bcd5ec;
   padding-bottom: 20px;
 }
 .btn {
