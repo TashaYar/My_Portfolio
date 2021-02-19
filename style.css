@@ -31,13 +31,15 @@
   background-color: black !important;
 }
 .block1 {
-  background-image: url("images/daniel-josef-AMssSjUaTY4-unsplash.jpg");
-  color: white;
+  background-image: url("images/cover.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 760px;
-  padding-top: 100px;
+  height: 700px;
+  padding-top: 70px;
+  font-family: cursive;
+  color: #fcf3cf;
+  text-shadow: 0 5px 15px rgba(255, 47, 32, 0.965);
 }
 
 #font1 {
@@ -103,7 +105,7 @@
   padding-top: 200px;
 }
 #contact-me {
-  background-image: url("images/Avalable.jpg");
+  background-image: url("images/earth.jpg");
   padding-top: 60px;
   padding-bottom: 80px;
   background-size: cover;
@@ -114,7 +116,7 @@
   color: white;
   height: 50px;
   width: 300px;
-
+  border-color: green;
   margin-bottom: 20px;
 }
 footer {
@@ -405,4 +407,19 @@ hr.l1 {
   border: 4px double #aed6f1;
   border-radius: 5px;
   width: 150px;
+}
+
+.cont-icons {
+  text-decoration: none;
+}
+.cont-icons:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.glow {
+  font-weight: 900;
+  font-size: 1.5em;
+  font-family: Snell Roundhand, cursive;
+  color: white;
+  animation: glow 1s ease-in-out infinite alternate;
 }
