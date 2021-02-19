@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 });
 
-//for scrolling
+//for scrolling in navbar
 $(function () {
   $(document).scroll(function () {
     var $nav = $("#navbar");
